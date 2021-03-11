@@ -11,9 +11,31 @@ const server =
 
       res.write('<html> <head> <title> Served </title> </head>')
       res.write('<body>')
-      res.write('Content \n')
-      res.write('More content \n')
-      res.write('Hello World')    
+      res.write( ' <table><tr><th>LOCATION</th>')
+      res.write( '   <th>NUMBER OF HOURS TO SPEND</th>')
+      res.write( '   <th>EXCEPTED MONEY TO PAY</th>')
+      res.write( ' </tr>')
+      res.write( '<tr>')
+      res.write( '    <td>Thar Desert</td>')
+      res.write( '   <td>48</td>')
+      res.write( '   <td>300 dollars per day</td>')
+      res.write( '  </tr>')
+     
+      
+      res.write( '<tr>')
+      res.write( '     <td>The ganges</td>')
+      res.write( '    <td>24</td>')
+      res.write( '    <td>200 dollars per day</td>')
+      res.write( '</tr>')
+     
+     
+      res.write( '<tr>')
+      res.write( '    <td>Yumthang Valley, Sikkim</td>')
+      res.write( '   <td>12</td>')
+      res.write( '   <td>250 dollars per day</td>')
+      res.write( ' </tr>')
+      res.write( ' </table>')
+        
       res.end('</body></html>')
       //Close the response
     }                           
