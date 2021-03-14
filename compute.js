@@ -21,11 +21,13 @@ const server =
        
          
         var x=Number(search_params.get("x"));
-        //var y=Number(search_params.get("y"));
+        var y=Number(search_params.get("y"));
           // Process the queries here
+          console.log(x)
+          console.log(y)
           res.statusCode = 200      //code for OK
-          res.setHeader('Content-Type', 'text/plain') 
-          res.write(`Math.log2(${x}) is ${Math.log2(x)} and Math.cosh(${x}) is ${Math.cosh(x)} and Math.floor(${x}) is ${Math.floor(x)}`)
+          res.setHeader('Access-Control-Allow-Origin', 'text/plain') 
+          res.write(`Math.log2(${x}) is ${Math.log2(x)} and Math.log2(${y}) is ${Math.log2(y)} , Math.cosh(${x}) is ${Math.cosh(x)} and Math.cosh(${y}) is ${Math.cosh(y)}, Math.floor(${x}) is ${Math.floor(x)} and Math.floor(${y}) is ${Math.floor(y)} `)
           res.end();
         
       } else {
