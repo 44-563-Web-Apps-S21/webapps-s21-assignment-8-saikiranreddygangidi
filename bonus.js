@@ -7,7 +7,7 @@ const server =
   http.createServer(            //Creates the response loop
     (req,res)=> {               //Anonymous function to handle the request
 
-        var arr=["good","fortune","jokes","naughty","smart","innocent"];
+        var arr=["active","jokes","innocent","naughty","good","smart","innocent"];
 var min=0;
 var max=arr.length;
 var value=Math.floor(Math.random()*(max-min)+min)
